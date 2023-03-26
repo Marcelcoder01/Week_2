@@ -21,14 +21,4 @@ class Person{
         console.log("Los hobbies son " + this.hobbies)
     }
 }
-
-// function IMC (peso, altura){
-//     console.log(
-//         persona1.nombre + ", tu IMC es de " + persona1.peso/(persona1.altura * persona1.altura) * 10000)
-// }
-// IMC ()
-let persona1 = new Person("Marcel", "Soto", 69, 172, 1992)
-// persona1.edad()
-persona1.printHobbies()
-
-
+module.exports = Person 
