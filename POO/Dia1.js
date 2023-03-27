@@ -27,8 +27,26 @@ class Person{
 //         persona1.nombre + ", tu IMC es de " + persona1.peso/(persona1.altura * persona1.altura) * 10000)
 // }
 // IMC ()
-let persona1 = new Person("Marcel", "Soto", 69, 172, 1992)
+
 // persona1.edad()
-persona1.printHobbies()
+// persona1.printHobbies()
 
+let persona1 = new Person("Marcel", "Soto", 69, 172, 1992)
+let persona2 = new Person ("Ailin", "Lebek", 60, 165, 1994)
 
+class Contacts{
+    constructor(){
+        this.arrpersonas = [];
+        
+    }
+    printPersons(){
+        console.log(this.arrpersonas)
+    }
+}
+
+let Contacts1 = new Contacts()
+Contacts1.arrpersonas.push(persona1, persona2)
+
+console.log(Contacts1)
+
+// Contacts1.printPersons()
